@@ -17,17 +17,20 @@ export const responseWidth = (value: number) => {
 export const onboardingData = [
   {
     id: '0',
-    title: 'Get new knowledge',
+    titleImage: images.desc1,
+    desc: 'At Friends tours and travel, we customize reliable and trutworthy educational tours to destinations all over the world',
     icon: images.onboarding1,
   },
   {
     id: '1',
-    title: 'Take time for yourself',
+    titleImage: images.desc2,
+    desc: 'To get the best of your adventure you just need to leave and go where you like. we are waiting for you',
     icon: images.onboarding2,
   },
   {
     id: '2',
-    title: 'Do what you love',
+    titleImage: images.desc3,
+    desc: 'To get the best of your adventure you just need to leave and go where you like. we are waiting for you',
     icon: images.onboarding3,
   },
 ];

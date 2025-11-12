@@ -15,7 +15,6 @@ module.exports = {
           '@utils': './src/utils',
         },
       },
-      'react-native-worklets/plugin',
     ],
   ],
 };
