@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 // import {useSelector} from 'react-redux';
 import { RootStackParamList } from '../utils/types';
 
+import BottomTabNavigation from './bottomTabNavigation';
 import OnboardingScreen from '@screens/OnboardingScreen';
 import LoginScreen from '@screens/LoginScreen';
 
@@ -29,7 +30,7 @@ const Navigation = () => {
       >
         <Stack.Screen name="Onboarding" component={OnboardingScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
-        {/* <Stack.Screen name="BottomTab" component={BottomTabNavigation} /> */}
+        <Stack.Screen name="BottomTab" component={BottomTabNavigation} />
       </Stack.Navigator>
     </NavigationContainer>
   );
