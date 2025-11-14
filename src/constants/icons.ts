@@ -6,6 +6,7 @@ import Search from '../assets/icons/Search.svg';
 import Chat from '../assets/icons/Chat.svg';
 import ChatActive from '../assets/icons/ChatActive.svg';
 import Profile from '../assets/icons/Profile.svg';
+import BackArrow from '../assets/icons/Arrow.svg';
 
 const icons = {
   //   Delete: require('../assets/icons/trash.png'),
@@ -18,6 +19,7 @@ const icons = {
   Chat,
   ChatActive,
   Profile,
+  BackArrow,
 };
 
 export default icons;

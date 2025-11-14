@@ -40,7 +40,7 @@ const useOnBoardHook = () => {
       navigation.dispatch(
         CommonActions.reset({
           index: 0,
-          routes: [{ name: 'Welcome' }],
+          routes: [{ name: 'Login' }],
         }),
       );
     }
@@ -53,6 +53,7 @@ const useOnBoardHook = () => {
     viewConfig,
     slideRef,
     onScroll,
+    currentIndex,
   };
 };
 

@@ -3,7 +3,6 @@ import {
   View,
   Text,
   FlatList,
-  Pressable,
   Image,
   ListRenderItem,
   ImageSourcePropType,
@@ -23,7 +22,7 @@ export type Props = {
 };
 
 const CarousalComponent = () => {
-  const { onNextPress, viewConfig, scrollX, slideRef, onScroll } =
+  const { onNextPress, viewConfig, scrollX, slideRef, onScroll, currentIndex } =
     useOnBoardHook();
 
   const renderItem: ListRenderItem<Props> = ({ item }) => {
@@ -59,9 +58,10 @@ const CarousalComponent = () => {
       />
       <View style={styles.footer}>
         <Pagination data={onboardingData} scrollX={scrollX} />
-        <Pressable onPress={() => onNextPress()}>
-          <CommonButton />
-        </Pressable>
+        <CommonButton
+          label={currentIndex === 0 ? 'Get Started' : 'Next'}
+          onPress={onNextPress}
+        />
       </View>
     </View>
   );
